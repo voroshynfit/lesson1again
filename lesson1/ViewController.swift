@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         let two: Int = 222
         let three: Int = 333
         
-        print(String(one) + String(two) + String(three))
+        print(Int((String(one) + String(two) + String(three))))
         
         /*
          Создай две целочисленных переменных. Сделай цикл в диапазоне их значений. Значение каждой итерации цикла распечатай в консоль. Добавь еще одну переменную, которая будет считать сумму всех цифр входящих в этот диапазон. Также если текущее число кратно 5, то информируй об этом через вывод в консоль.
@@ -102,8 +102,8 @@ class ViewController: UIViewController {
         let temp1 = Int(number11) ?? 0
         let temp3 = Int(number33) ?? 0
         let temp5 = Int(number55) ?? 0
-        var temp2 = Int(number22.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()) ?? 0
-        var temp4 = Int(number44.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()) ?? 0
+        let temp2 = Int(number22.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()) ?? 0
+        let temp4 = Int(number44.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()) ?? 0
         
         print(temp1 + temp2 + temp3 + temp4 + temp5)
     }
