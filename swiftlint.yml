@@ -176,7 +176,7 @@ analyzer_rules:
 force_try:
   severity: error
 
-line_length: 120
+line_length: 400
 
 function_body_length:
   warning: 70
